@@ -1,0 +1,59 @@
+['/home/frank/dev/cosmotranstest', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-x86_64-linux-gnu', '/usr/lib/python2.7/lib-tk', '/usr/lib/python2.7/lib-old', '/usr/lib/python2.7/lib-dynload', '/usr/local/lib/python2.7/dist-packages', '/usr/lib/python2.7/dist-packages', '/usr/lib/python2.7/dist-packages/PIL', '/usr/lib/python2.7/dist-packages/gtk-2.0', '/usr/lib/pymodules/python2.7', '/usr/lib/python2.7/dist-packages/wx-2.8-gtk2-unicode', '/home/frank/dev/CosmoTransitions', '/home/frank/dev/CosmoTransitions/cosmoTransitions', '/home/frank/dev/CosmoTransitions/test']
+Tracing phase starting at x = [ 295.56323266  406.39105772] ; t = 0.0
+Tracing minimum up
+traceMinimum t0 = 0
+.........................................................................................................................
+Tracing phase starting at x = [ 215.33109228 -149.94739436] ; t = 118.201005307
+Tracing minimum down
+traceMinimum t0 = 118.201
+...............................................................................................
+Tracing minimum up
+traceMinimum t0 = 118.201
+...............................................................................................................................................................................................................
+Tracing phase starting at x = [ 0.00091246 -0.00068189] ; t = 223.727036946
+Tracing minimum down
+traceMinimum t0 = 223.727
+.......................
+Tracing minimum up
+traceMinimum t0 = 223.727
+...........................................................
+Tunneling from phase 1 to phase 0 at T=77.62
+high_vev = [ 234.29580429 -111.48606342]
+low_vev = [ 289.27691828  389.92587847]
+Path deformation converged. 13 steps. fRatio = 6.34619e-03
+Path deformation converged. 1 steps. fRatio = 4.90927e-03
+Tunneling from phase 1 to phase 0 at T=77.62
+high_vev = [ 234.29281538 -111.55648313]
+low_vev = [ 289.27654204  389.92487703]
+Path deformation converged. 13 steps. fRatio = 7.29746e-03
+Path deformation converged. 1 steps. fRatio = 5.19341e-03
+Tunneling from phase 1 to phase 0 at T=97.41
+high_vev = [ 225.64758778 -147.34775394]
+low_vev = [ 277.65640314  357.85757021]
+Path deformation converged. 9 steps. fRatio = 1.53190e-02
+Path deformation converged. 1 steps. fRatio = 6.16223e-04
+Tunneling from phase 1 to phase 0 at T=81.61
+high_vev = [ 232.18133107 -132.26581836]
+low_vev = [ 287.63777595  385.54095111]
+Path deformation converged. 11 steps. fRatio = 5.30536e-03
+Path deformation converged. 1 steps. fRatio = 2.27263e-03
+Tunneling from phase 1 to phase 0 at T=83.83
+high_vev = [ 231.26966849 -136.22089128]
+low_vev = [ 286.60147391  382.74715963]
+Path deformation converged. 11 steps. fRatio = 4.12675e-03
+Path deformation converged. 1 steps. fRatio = 1.94888e-03
+Tunneling from phase 1 to phase 0 at T=84.24
+high_vev = [ 231.10342937 -136.82095019]
+low_vev = [ 286.39882613  382.19883009]
+Path deformation converged. 11 steps. fRatio = 3.69367e-03
+Path deformation converged. 1 steps. fRatio = 1.92581e-03
+Tunneling from phase 1 to phase 0 at T=84.24
+high_vev = [ 231.10297338 -136.82256041]
+low_vev = [ 286.3982628   382.19731109]
+Path deformation converged. 11 steps. fRatio = 3.69207e-03
+Path deformation converged. 1 steps. fRatio = 1.92752e-03
+Tunneling from phase 1 to phase 0 at T=84.24
+high_vev = [ 231.102571   -136.82398004]
+low_vev = [ 286.39776421  382.19596133]
+Path deformation converged. 11 steps. fRatio = 3.69111e-03
+Path deformation converged. 1 steps. fRatio = 1.92751e-03
