@@ -2,10 +2,10 @@
 # coding: utf-8
 
 import sys
-sys.path.append('/home/frank/dev/CosmoTransitions')
-sys.path.append('/home/frank/dev/CosmoTransitions/test')
-sys.path.append('/home/frank/dev/CosmoTransitions/cosmoTransitions')
+sys.path.append('/home/graham/Documents/CosmoTransitions')
+sys.path.append('/home/graham/Documents/CosmoTransitions/test')
+sys.path.append('/home/graham/Documents/CosmoTransitions/cosmoTransitions')
 # show out path for debugging
 print sys.path
 
-execfile('/home/frank/dev/CosmoTransitions/test/fullTunneling_plot.py')
+execfile('/home/graham/Documents/CosmoTransitions/test/fullTunneling_plot.py')

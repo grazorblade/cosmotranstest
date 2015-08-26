@@ -2,9 +2,9 @@
 # coding: utf-8
 
 import sys
-sys.path.append('/home/frank/dev/CosmoTransitions')
-sys.path.append('/home/frank/dev/CosmoTransitions/cosmoTransitions')
-sys.path.append('/home/frank/dev/CosmoTransitions/test')
+sys.path.append('/home/graham/Documents/CosmoTransitions')
+sys.path.append('/home/graham/Documents/CosmoTransitions/cosmoTransitions')
+sys.path.append('/home/graham/Documents/CosmoTransitions/test')
 print sys.path
 
 # run testModel1 from CosmoTransitions
