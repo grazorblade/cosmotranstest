@@ -1,4 +1,5 @@
 # cosmotranstest
+
 Python scripts to test [Cosmo Transitions](https://github.com/clwainwright/CosmoTransitions).
 
 Ensure you have a clone of Cosmo Transitions and this repository:
@@ -12,6 +13,10 @@ Ensure you have a clone of Cosmo Transitions and this repository:
     cosmotranstest/
 ```
 
+## linux image
+
+This was tested on [Linux Mint 17.2 “Rafaela” Xfce](http://blog.linuxmint.com/?p=2889)
+
 ## set path
 
 Set the paths so Python knows where the code is
@@ -21,9 +26,8 @@ Set the paths so Python knows where the code is
 PYTHONPATH=[root]/CosmoTransitions/cosmoTransitions:[root]/cosmotranstest/
 ```
 
-For example I have `[root]` path is `/home/frank/dev/`. Under that directory I
+For example I have `[root]` path is `/home/graham/Documents/`. Under that directory I
 have the `CosmoTransitions` and `cosmotranstest` directories.
-
 
 ## test model
 
