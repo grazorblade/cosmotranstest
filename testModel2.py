@@ -17,6 +17,11 @@ class model2(generic_potential.generic_potential):
     term and an extra boson whose mass depends on both fields.
     It has low-temperature, mid-temperature, and high-temperature phases, all
     of which are found from the *getPhases()* function.
+    ADD A COMMENT
+    ADD A COMMENT
+    ADD A COMMENT
+    ADD A COMMENT
+    ADD A COMMENT
     """
     def init(self,m1=120.,m2=50.,mu=25.,Y1=.1,Y2=.15,n=30):
         """
@@ -76,7 +81,7 @@ class model2(generic_potential.generic_potential):
         # fields, hence the ellipses.
         # (For example, X can be an array of N two dimensional points and have 
         # shape (N,2), but it should NOT be a series of two arrays of length N 
-        # and have shape (2,N).)
+        # and have shape (2,N).) SMALL CHANGE IN COMMENT ONLY
         phi1,phi2,phi3 = X[...,0], X[...,1], X[...,2]
         r = .25*self.l1*(phi1*phi1-v2)**2 + .25*self.l2*(phi2*phi2-v2)**2 
         r -= self.mu2*phi1*phi2
@@ -108,8 +113,8 @@ class model2(generic_potential.generic_potential):
         
         # The number of degrees of freedom for the masses. This should be a 
         # one-dimensional array with the same number of entries as there are 
-        # masses.
-        dof = np.array([1,   1,   1,   self.n])
+        # masses. CHANGED
+        dof = np.array([1,   1,   1, 1,  self.n])
         
         # c is a constant for each particle used in the Coleman-Weinberg 
         # potential using MS-bar renormalization. It equals 1.5 for all scalars 
@@ -121,9 +126,9 @@ class model2(generic_potential.generic_potential):
         
     def approxZeroTMin(self):
         # There are generically two minima at zero temperature in this model, 
-        # and we want to include both of them.
+        # and we want to include both of them. CHANGED
         v = v2**.5
-        return [np.array([v,v]), np.array([v,-v]), 0]
+        return [np.array([v,v,0]), np.array([v,-v,0])]
         
 
 def makePlots(m=None):
