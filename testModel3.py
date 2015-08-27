@@ -175,4 +175,8 @@ def makePlots(m=None):
     plt.xlabel("radius")
     plt.ylabel(R"$\phi-\phi_{min}$ (along the path)")
     plt.title("Tunneling profile")
-
+#
+# MAIN
+#
+if __name__ == '__main__':
+    makePlots()
