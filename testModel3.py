@@ -17,6 +17,12 @@ class model2(generic_potential.generic_potential):
     term and an extra boson whose mass depends on both fields.
     It has low-temperature, mid-temperature, and high-temperature phases, all
     of which are found from the *getPhases()* function.
+    ADDED A COMMENT FOR TESTING PURPOSES
+    ADDED A COMMENT FOR TESTING PURPOSES
+    ADDED A COMMENT FOR TESTING PURPOSES
+    ADDED A COMMENT FOR TESTING PURPOSES
+    ADDED A COMMENT FOR TESTING PURPOSES
+    ADDED A COMMENT FOR TESTING PURPOSES
     """
     def init(self,m1=120.,m2=50.,mu=25.,Y1=.1,Y2=.15,n=30):
         """
