@@ -17,7 +17,7 @@ class model2(generic_potential.generic_potential):
     term and an extra boson whose mass depends on both fields.
     It has low-temperature, mid-temperature, and high-temperature phases, all
     of which are found from the *getPhases()* function.
-    
+    ADDED A COMMENT FOR TESTING PURPOSES
     ADDED A COMMENT FOR TESTING PURPOSES
     ADDED A COMMENT FOR TESTING PURPOSES
     ADDED A COMMENT FOR TESTING PURPOSES
@@ -136,7 +136,7 @@ def makePlots(m=None):
     import matplotlib.pyplot as plt
     if m is None:
         m = model2()
-        m.findAllTransitions()
+        m.findAllTransitions(out=model.findAllTransitions())
     # --
     plt.figure()
     m.plotPhasesPhi()
