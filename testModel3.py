@@ -136,7 +136,7 @@ def makePlots(m=None):
     import matplotlib.pyplot as plt
     if m is None:
         m = model2()
-        m.findAllTransitions(out=model.findAllTransitions())
+        m.findAllTransitions(out=m.findAllTransitions())
     # --
     plt.figure()
     m.plotPhasesPhi()
