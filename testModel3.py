@@ -89,8 +89,8 @@ class model3(generic_potential.generic_potential):
         r -= self.mu2*phi1*phi2
         r += self.l1*phi3*phi3
         return r
-    def fermion_massSq(self, X):
-         pass
+   # def fermion_massSq(self, X):
+   #      pass
         
     def boson_massSq(self, X, T):
         X = np.array(X)
