@@ -183,5 +183,5 @@ class model3(generic_potential.generic_potential):
 #
 if __name__ == '__main__':
 #    makePlots()
-    m = testModel3.model3()
+    m = model3()
     m.findAllTransitions(out=m.findAllTransitions())
