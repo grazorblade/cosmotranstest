@@ -92,7 +92,7 @@ class model2(generic_potential.generic_potential):
     def boson_massSq(self, X, T):
         X = np.array(X)
         phi1,phi2,phi3 = X[...,0], X[...,1], X[...,2]
-        trying to fix
+        #trying to fix
         self.Nboson = 4
         # We need to define the field-dependent boson masses. This is obviously 
         # model-dependent.
