@@ -53,6 +53,7 @@ class model2(generic_potential.generic_potential):
         self.mu2 = mu**2        
         self.Y1, self.Y2 = Y1, Y2
         self.n = n
+        
                     
     def forbidPhaseCrit(self, X):
         """
@@ -86,7 +87,7 @@ class model2(generic_potential.generic_potential):
         phi1,phi2,phi3 = X[...,0], X[...,1], X[...,2]
         r = .25*self.l1*(phi1*phi1-v2)**2 + .25*self.l2*(phi2*phi2-v2)**2 
         r -= self.mu2*phi1*phi2
-        r += self.v2*phi3*phi3
+        r += self.l1*phi3*phi3
         return r
         
     def boson_massSq(self, X, T):
