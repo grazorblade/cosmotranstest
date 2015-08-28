@@ -7,7 +7,7 @@ from cosmoTransitions import generic_potential
         
 v2 = 246.**2
     
-class model2(generic_potential.generic_potential):
+class model3(generic_potential.generic_potential):
     """
     A sample model which makes use of the *generic_potential* class.
 
@@ -183,4 +183,5 @@ class model2(generic_potential.generic_potential):
 #
 if __name__ == '__main__':
 #    makePlots()
+    m = testModel3.model3()
     m.findAllTransitions(out=m.findAllTransitions())
