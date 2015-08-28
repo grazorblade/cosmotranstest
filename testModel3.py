@@ -133,52 +133,53 @@ class model2(generic_potential.generic_potential):
         v = v2**.5
         return [np.array([v,v,0]), np.array([v,-v,0])]
         
-
-def makePlots(m=None):
-    import matplotlib.pyplot as plt
-    if m is None:
-        m = model2()
         m.findAllTransitions(out=m.findAllTransitions())
+
+#def makePlots(m=None):
+ #   import matplotlib.pyplot as plt
+  #  if m is None:
+  #      m = model2()
+  #      m.findAllTransitions(out=m.findAllTransitions())
     # --
-    plt.figure()
-    m.plotPhasesPhi()
-    plt.axis([0,300,-50,550])
-    plt.title("Minima as a function of temperature")
-    plt.show()
+  #  plt.figure()
+  #  m.plotPhasesPhi()
+  #  plt.axis([0,300,-50,550])
+  #  plt.title("Minima as a function of temperature")
+  #  plt.show()
     # --
-    plt.figure(figsize=(8,3))
-    ax = plt.subplot(131)
-    T = 0
-    m.plot2d((-450,450,-450,450), T=T, cfrac=.4,clevs=65,n=100,lw=.5)
-    ax.set_aspect('equal')
-    ax.set_title("$T = %0.2f$" % T)
-    ax.set_xlabel(R"$\phi_1$")
-    ax.set_ylabel(R"$\phi_2$")
-    ax = plt.subplot(132)
-    T = m.TnTrans[1]['Tnuc']
-    instanton = m.TnTrans[1]['instanton']
-    phi = instanton.Phi
-    m.plot2d((-450,450,-450,450), T=T, cfrac=.4,clevs=65,n=100,lw=.5)
-    ax.plot(phi[:,0], phi[:,1], 'k')
-    ax.set_aspect('equal')
-    ax.set_title("$T = %0.2f$" % T)
-    ax.set_yticklabels([])
-    ax.set_xlabel(R"$\phi_1$")
-    ax = plt.subplot(133)
-    T = m.TnTrans[0]['Tnuc']
-    m.plot2d((-450,450,-450,450), T=T, cfrac=.4,clevs=65,n=100,lw=.5)
-    ax.set_aspect('equal')
-    ax.set_title("$T = %0.2f$" % T)
-    ax.set_yticklabels([])
-    ax.set_xlabel(R"$\phi_1$")
+  #  plt.figure(figsize=(8,3))
+  #  ax = plt.subplot(131)
+  #  T = 0
+  #  m.plot2d((-450,450,-450,450), T=T, cfrac=.4,clevs=65,n=100,lw=.5)
+  #  ax.set_aspect('equal')
+  #  ax.set_title("$T = %0.2f$" % T)
+  #  ax.set_xlabel(R"$\phi_1$")
+  #  ax.set_ylabel(R"$\phi_2$")
+  #  ax = plt.subplot(132)
+  #  T = m.TnTrans[1]['Tnuc']
+  #  instanton = m.TnTrans[1]['instanton']
+  #  phi = instanton.Phi
+  #  m.plot2d((-450,450,-450,450), T=T, cfrac=.4,clevs=65,n=100,lw=.5)
+  #  ax.plot(phi[:,0], phi[:,1], 'k')
+  #  ax.set_aspect('equal')
+  #  ax.set_title("$T = %0.2f$" % T)
+  #  ax.set_yticklabels([])
+  #  ax.set_xlabel(R"$\phi_1$")
+  #  ax = plt.subplot(133)
+  #  T = m.TnTrans[0]['Tnuc']
+  #  m.plot2d((-450,450,-450,450), T=T, cfrac=.4,clevs=65,n=100,lw=.5)
+  #  ax.set_aspect('equal')
+  #  ax.set_title("$T = %0.2f$" % T)
+  #  ax.set_yticklabels([])
+  #  ax.set_xlabel(R"$\phi_1$")
     # --
-    plt.figure()
-    plt.plot(instanton.profile1D.R, instanton.profile1D.Phi)
-    plt.xlabel("radius")
-    plt.ylabel(R"$\phi-\phi_{min}$ (along the path)")
-    plt.title("Tunneling profile")
+  #  plt.figure()
+  #  plt.plot(instanton.profile1D.R, instanton.profile1D.Phi)
+  #  plt.xlabel("radius")
+  #  plt.ylabel(R"$\phi-\phi_{min}$ (along the path)")
+  #  plt.title("Tunneling profile")
 #
 # MAIN
 #
-if __name__ == '__main__':
-    makePlots()
+#if __name__ == '__main__':
+#    makePlots()
