@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "testModel3.py", line 189, in <module>
+    m.findAllTransitions(out=m.findAllTransitions())
+  File "/home/graham/Documents/CosmoTransitions/cosmoTransitions/generic_potential.py", line 614, in findAllTransitions
+    self.getPhases()
+  File "/home/graham/Documents/CosmoTransitions/cosmoTransitions/generic_potential.py", line 552, in getPhases
+    **tracingArgs_)
+  File "/home/graham/Documents/CosmoTransitions/cosmoTransitions/transitionFinder.py", line 342, in traceMultiMin
+    nextPoint.append([t,dtstart,fmin(x,t),None])
+  File "/home/graham/Documents/CosmoTransitions/cosmoTransitions/transitionFinder.py", line 335, in fmin
+    ftol=np.inf, disp=False)
+  File "/usr/lib/python2.7/dist-packages/scipy/optimize/optimize.py", line 373, in fmin
+    res = _minimize_neldermead(func, x0, args, callback=callback, **opts)
+  File "/usr/lib/python2.7/dist-packages/scipy/optimize/optimize.py", line 438, in _minimize_neldermead
+    fsim[0] = func(x0)
+  File "/usr/lib/python2.7/dist-packages/scipy/optimize/optimize.py", line 281, in function_wrapper
+    return function(*(wrapper_args + args))
+  File "/home/graham/Documents/CosmoTransitions/cosmoTransitions/generic_potential.py", line 328, in Vtot
+    y += self.V1(bosons, fermions)
+  File "/home/graham/Documents/CosmoTransitions/cosmoTransitions/generic_potential.py", line 243, in V1
+    y = np.sum(n*m2*m2 * (np.log(np.abs(m2/self.renormScaleSq) + 1e-100)
+ValueError: operands could not be broadcast together with shapes (5,) (4,)
