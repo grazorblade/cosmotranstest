@@ -103,7 +103,7 @@ class model2(generic_potential.generic_potential):
         A = .5*(a+b)
         B = np.sqrt(.25*(a-b)**2 + self.mu2**2)
         mb = self.Y1*(phi1*phi1+phi2*phi2) + self.Y2*phi1*phi2
-        M = np.array([A+B, A-B, 2*self.l1, mb])
+        M = np.array([A+B, A-B, 2*phi3*self.l1, mb])
         
         # At this point, we have an array of boson masses, but each entry might 
         # be an array itself. This happens if the input X is an array of points.
